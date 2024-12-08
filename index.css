@@ -27,47 +27,48 @@ h1 {
 #waifus {
     width: 100%;
     height: auto;
-    max-height: 400px;
     object-fit: contain;
     padding: 5%;
+    max-height: 600px;
+    overflow-y: auto; /* Add scroll if needed */
 }
 
 .waifu-button {
     margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* #waifuButton,
-#waifuButtonNsfw,
-#ass,
-#milf,
-#hentai,
-#oral,
-#ecchi,
-#ero,
-#maid,
-#waifu,
-#raiden,
-#oppai,
-#selfies,
-#uniform,
-#mori,
-#marin,
-#kamisato {
-    margin: 10px;
+.waifu-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.waifu-button:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+}
+
+#waifus {
+    max-height: 600px;
+    overflow-y: auto; /* Add scroll if needed */
 }
 
 @media screen and (max-width: 800px) {
-    #waifus {
-        max-height: 600px;
+    #waifu-buttons-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     h1 {
-        margin-top: -10px;
+        margin-top: 0;
     }
 }
-
-@media screen and (min-width: 801px) {
-    #waifus {
-        max-height: 600px;
-    }
-} */
